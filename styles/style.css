@@ -1,0 +1,486 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    background: url(../img/landing_bg.jpg);
+    background-size: cover;
+    background-position: 50% 50%
+}
+
+.logo {
+    position: fixed;
+    float: left;
+    margin: 16px 36px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: New Rocker
+}
+
+.logo-span {
+    font-size: 15px;
+    font-style: italic;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    ;
+    margin: 0px;
+    transition: 1s;
+}
+
+nav.black ul {
+    background: #000;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+    margin-right: 10px;
+    font-family: oswald;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.menu-icon {
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+.main-heading {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh
+}
+
+.main-heading h1 {
+    color: white;
+    margin: 0;
+    font-size: 130px;
+    padding: 10px;
+    outline: 3px solid red;
+    font-family: New Rocker
+}
+
+.main-heading p {
+    color: white;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    text-transform: uppercase;
+    font-family: playfair display sc
+}
+
+.p-span {
+    font-style: italic;
+    color: red;
+    text-decoration: underline;
+}
+
+.about {
+    margin: 0 30px;
+    padding: 10px;
+}
+
+.section-title {
+    justify-content: center;
+    font-family: Oswald;
+    font-size: 17px;
+    margin-bottom: 25px;
+    display: flex;
+}
+
+.section-title--heading {
+    text-align: center;
+}
+
+.section-title--link a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section-title--icon {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.section-title--logotype {
+    font-family: New Rocker;
+    font-size: 28px
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-section {
+    line-height: 1.7;
+    font-family: oswald;
+    font-weight: 100;
+    margin: 20px;
+    flex: 1;
+}
+
+.img-section {
+    border: 1px red solid;
+    flex: 1
+}
+
+.parallax {
+    background-image: url(../img/parallax.jpg);
+    height: 300px;
+    background-attachment: fixed;
+    background-position: 10% 1%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.test1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Oswald;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin: 40px;
+    font-family: Oswald;
+    font-weight: 100;
+}
+
+.test2 {
+    height: 250px;
+    width: 33%;
+    text-align: center;
+}
+
+.section-rules--paragraph {
+    margin-top: -30px;
+}
+
+.section-rooms-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.room img {
+    width: 650px;
+    max-width: 100%;
+    max-height: 450px;
+}
+
+.room {
+    width: 100%;
+    height: 60vh;
+    background-image: url(../img/room_backgrounds/ghost_bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% -50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.room img:nth-child(2) {
+    width: 50%
+}
+
+.room:nth-child(1) {
+    background-image: url(../img/room_backgrounds/ghost_bg.jpg)
+}
+
+.room:nth-child(3) {
+    background-image: url(../img/room_backgrounds/hacker_bg.jpg);
+}
+
+.room:nth-child(5) {
+    background-image: url(../img/room_backgrounds/pirates_bg.jpg);
+}
+
+.room:nth-child(7) {
+    background-image: url(../img/room_backgrounds/willyoumarryme_bg.jpg);
+}
+
+.room-description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Oswald;
+    width: 100%;
+    max-height: 520px;
+    transition: ease 1s;
+}
+
+.room-description > h2 {
+    margin-bottom: 0;
+    transition: ease 1s;
+}
+
+.room-description--heading {
+    margin: 0;
+    font-size: 15px;
+    transition: ease 1s;
+}
+
+.room-description--paragraph {
+    font-weight: 100;
+    line-height: 2.1;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+.hideme {
+    opacity: 0
+}
+
+.section-contact{
+    margin-top: 100px;
+}
+
+.section-contact-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-family: Oswald;
+}
+
+.section-contact--logo {
+    font-family: New Rocker;
+    font-size: 32px;
+}
+
+.section-contact--paragraph {
+    line-height: 0.2;
+    
+}
+
+.section-contact--map {
+margin-top: 40px;
+margin-bottom: -5px;
+padding: 0;
+}
+
+footer {
+    background-image: url(../img/white_wall_hash.png);
+    font-family: Oswald;
+    display: flex;
+    box-sizing: border-box;
+ justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap
+}
+
+.footer-card--heading{
+    text-align: center;
+}
+input[type=text], 
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: black;;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: OSwald;
+    font-size: 15px;
+    letter-spacing: 
+}
+
+
+.footer-card{
+width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.stopro{
+    width: 100%;
+    text-align: center;
+}
+
+/*  MEDIA QRRRRRRRRRRRR*/
+
+
+/*  MEDIA QRRRRRRRRRRRR*/
+
+
+/*  MEDIA QRRRRRRRRRRRR*/
+
+
+/*  MEDIA QRRRRRRRRRRRR*/
+
+
+/*  MEDIA QRRRRRRRRRRRR*/
+
+@media (max-width:580px) {
+   .logo {
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
+    }
+    nav ul {
+        max-height: 0px;
+        background: #000;
+    }
+    nav.black ul {
+        background: #000;
+    }
+    .showing {
+        max-height: 25em;
+        width: 100%;
+        margin: 0;
+    }
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px 0;
+        text-align: center;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .main-heading {
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    .about-container {
+        flex-direction: column;
+    }
+    .main-heading h1 {
+        font-size: 95px
+    }
+    .room img {
+        display: inline-block;
+    }
+    .room--heading,
+    .room--paragraph {
+        display: none;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .test2 {
+        width: 100%;
+        margin: 25px 0px
+    }
+    .room-description--paragraph {
+        font-size: 13px;
+        line-height: 1.9
+    }
+    .room {
+        margin-top: 100px
+    }
+
+    footer{
+     flex-direction: column;
+       
+        max-width: 100%;
+    
+    }
+    
+    .footer-card {
+    width: 90%
+
+}
+    .stopro{
+        width: 100%;
+    }
+}
+
+
+@media(min-width: 581px) and (max-width: 980px) {
+    .logo {
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
+    }
+    nav ul {
+        max-height: 0px;
+        background: #000;
+    }
+    nav.black ul {
+        background: #000;
+    }
+    .showing {
+        max-height: 25em;
+        width: 100%;
+        margin: 0;
+    }
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px 0;
+        text-align: center;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .about-container {
+        flex-direction: column;
+    }
+    .room--heading {
+        margin-top: 50px
+    }
+    .room {
+        margin-top: 130px
+    }
+    
+}
